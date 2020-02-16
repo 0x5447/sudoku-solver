@@ -17,12 +17,9 @@ bool is_digits(const std::string &str)
 }
 
 void printGrid(int grid[9][9], int num){
-    if(num != 0) std::cout << "Solved Sudoku, possibility " << num << ":" << std::endl;
-    solvedSudoku *dialogue = new solvedSudoku();
-    std::string currentTitle = "Solution ";
-    QString finalTitle = QString::fromStdString(currentTitle + std::to_string(num));
-    dialogue->setWindowTitle(finalTitle);
-    dialogue->exec();
+    solvedSudoku dialogue;
+    dialogue.showGrid(grid, num);
+    dialogue.exec();
 }
 
 bool possible(int y, int x, int n, int grid[9][9]){
@@ -89,6 +86,7 @@ SudokuSolver::~SudokuSolver()
 
 void SudokuSolver::on_solveButton_clicked()
 {
+    numSolved = 0;
     int grid[9][9];
     grid[0][0] = ui->spinBox11->value();
     grid[0][1] = ui->spinBox12->value();
@@ -180,6 +178,5 @@ void SudokuSolver::on_solveButton_clicked()
     grid[8][7] = ui->spinBox98->value();
     grid[8][8] = ui->spinBox99->value();
 
-    printGrid(grid, 0);
     solve(grid);
 }

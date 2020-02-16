@@ -14,6 +14,10 @@ class solvedSudoku : public QDialog
 public:
     explicit solvedSudoku(QWidget *parent = nullptr);
     ~solvedSudoku();
+    void showGrid(int grid[9][9], int num);
+
+private slots:
+    void on_doneButton_clicked();
 
 private:
     Ui::solvedSudoku *ui;

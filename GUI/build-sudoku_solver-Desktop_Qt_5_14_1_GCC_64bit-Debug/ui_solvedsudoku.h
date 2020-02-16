@@ -112,16 +112,15 @@ public:
     QSpacerItem *horizontalSpacer;
     QPushButton *doneButton;
     QSpacerItem *horizontalSpacer_2;
-    QLabel *title;
 
     void setupUi(QDialog *solvedSudoku)
     {
         if (solvedSudoku->objectName().isEmpty())
             solvedSudoku->setObjectName(QString::fromUtf8("solvedSudoku"));
-        solvedSudoku->resize(442, 607);
+        solvedSudoku->resize(442, 450);
         gridLayoutWidget = new QWidget(solvedSudoku);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(10, 70, 421, 381));
+        gridLayoutWidget->setGeometry(QRect(10, 10, 421, 381));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -613,7 +612,7 @@ public:
 
         horizontalLayoutWidget = new QWidget(solvedSudoku);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(10, 460, 421, 41));
+        horizontalLayoutWidget->setGeometry(QRect(10, 400, 421, 41));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -630,15 +629,6 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer_2);
 
-        title = new QLabel(solvedSudoku);
-        title->setObjectName(QString::fromUtf8("title"));
-        title->setGeometry(QRect(10, 10, 421, 51));
-        QFont font;
-        font.setPointSize(20);
-        font.setBold(true);
-        font.setWeight(75);
-        title->setFont(font);
-        title->setAlignment(Qt::AlignCenter);
 
         retranslateUi(solvedSudoku);
 
@@ -730,7 +720,6 @@ public:
         label96->setText(QCoreApplication::translate("solvedSudoku", "0", nullptr));
         label43->setText(QCoreApplication::translate("solvedSudoku", "0", nullptr));
         doneButton->setText(QCoreApplication::translate("solvedSudoku", "Done", nullptr));
-        title->setText(QCoreApplication::translate("solvedSudoku", "Solution", nullptr));
     } // retranslateUi
 
 };
