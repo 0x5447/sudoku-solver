@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="791d5115-86a2-4f45-9fd9-3d2afc9226e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sudoku_solver.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/sudoku_solver.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/sudoku_solver" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/sudoku_solver" afterDir="false" />
@@ -27,6 +26,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="sudoku_solver" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -41,6 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="sudoku_solver" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sudoku_solver" TARGET_NAME="sudoku_solver" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sudoku_solver" RUN_TARGET_NAME="sudoku_solver">
@@ -60,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581784208302</updated>
       <workItem from="1581784211966" duration="3219000" />
+      <workItem from="1581872991393" duration="4888000" />
     </task>
     <servers />
   </component>
@@ -67,41 +71,52 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="914" height="340" key="GridCell.Tab.0.bottom" timestamp="1581787653593">
+    <state width="914" height="285" key="GridCell.Tab.0.bottom" timestamp="1581878635841">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
-    <state width="914" height="340" key="GridCell.Tab.0.center" timestamp="1581787653593">
+    <state width="914" height="285" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581878635841" />
+    <state width="914" height="285" key="GridCell.Tab.0.center" timestamp="1581878635841">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
-    <state width="914" height="340" key="GridCell.Tab.0.left" timestamp="1581787653592">
+    <state width="914" height="285" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581878635841" />
+    <state width="914" height="285" key="GridCell.Tab.0.left" timestamp="1581878635841">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653592" />
-    <state width="914" height="340" key="GridCell.Tab.0.right" timestamp="1581787653593">
+    <state width="914" height="285" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581878635841" />
+    <state width="914" height="285" key="GridCell.Tab.0.right" timestamp="1581878635841">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
-    <state width="914" height="340" key="GridCell.Tab.1.bottom" timestamp="1581787653593">
+    <state width="914" height="285" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581878635841" />
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1581877275475">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
-    <state width="914" height="340" key="GridCell.Tab.1.center" timestamp="1581787653593">
+    <state width="1874" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581877275475" />
+    <state width="1874" height="340" key="GridCell.Tab.1.center" timestamp="1581877275474">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
-    <state width="914" height="340" key="GridCell.Tab.1.left" timestamp="1581787653593">
+    <state width="1874" height="340" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581877275474" />
+    <state width="1874" height="340" key="GridCell.Tab.1.left" timestamp="1581877275474">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
-    <state width="914" height="340" key="GridCell.Tab.1.right" timestamp="1581787653593">
+    <state width="1874" height="340" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581877275474" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right" timestamp="1581877275475">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="914" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581787653593" />
+    <state width="1874" height="340" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581877275475" />
+    <state x="543" y="290" width="824" height="534" key="IDE.errors.dialog" timestamp="1581876835171">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="543" y="290" width="824" height="534" key="IDE.errors.dialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581876835171" />
     <state x="620" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581784213951">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="620" y="380" key="com.intellij.ide.util.TipDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1581784213951" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="grid" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

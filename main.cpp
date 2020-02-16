@@ -1,9 +1,16 @@
 #include <iostream>
+#include <string>
 
 int numSolved = 0;
 
+bool is_digits(const std::string &str)
+{
+    return str.find_first_not_of("0123456789") == std::string::npos;
+}
+
 void printGrid(int grid[9][9], int num){
-    std::cout << "Solved Sudoku, possibility " << num << ":" << std::endl;
+    if(num != 0) std::cout << "Solved Sudoku, possibility " << num << ":" << std::endl;
+    else std::cout << "Unsolved Sudoku:" << std::endl;
     for(int i = 0; i < 9; ++i){
         for(int j = 0; j < 9; ++j){
             std::cout << grid[i][j] << " ";
@@ -62,25 +69,22 @@ void solve(int grid[9][9]){
 }
 
 int main() {
-    int grid[9][9]/* = {
-            {5, 3, 0, 0, 7, 0, 0, 0, 0},
-            {6, 0, 0, 1, 9, 5, 0, 0, 0},
-            {0, 9, 8, 0, 0, 0, 0, 6, 0},
-            {8, 0, 0, 0, 6, 0, 0, 0, 3},
-            {4, 0, 0, 8, 0, 3, 0, 0, 1},
-            {7, 0, 0, 0, 2, 0, 0, 0, 6},
-            {0, 6, 0, 0, 0, 0, 2, 8, 0},
-            {0, 0, 0, 4, 1, 9, 0, 0, 5},
-            {0, 0, 0, 0, 8, 0, 0, 0, 0}
-    }*/;
-    for(int i = 0; i < 9; ++i){ // TODO: Fix this block to input correctly
-        char line[9];
+    int grid[9][9];
+    for(int i = 0; i < 9; ++i){
+        std::string line;
+        std::cout << "Enter line " << i+1 << " : ";
         std::cin >> line;
+        if(line.length() != 9){
+            std::cerr << "Invalid sudoku grid, exiting...1" << std::endl;
+            return -1;
+        }
         for(int j = 0; j < 9; ++j){
             try{
-                grid[i][j] = (int)line[j];
+                if(!isdigit(((int)(line[j]) - 48))) grid[i][j] = ((int)line[j] - 48);
+                else throw std::exception();
             }
-            catch(const std::exception&){
+            catch(const std::exception& e){
+                std::cout << "Invalid sudoku grid, exiting...2" << std::endl;
                 return -1;
             }
         }
