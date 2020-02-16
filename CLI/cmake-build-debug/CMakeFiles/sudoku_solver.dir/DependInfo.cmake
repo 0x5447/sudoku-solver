@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tgodfrey0/Code/sudoku_solver/main.cpp" "/home/tgodfrey0/Code/sudoku_solver/cmake-build-debug/CMakeFiles/sudoku_solver.dir/main.cpp.o"
+  "/home/tgodfrey0/Code/sudoku_solver/CLI/main.cpp" "/home/tgodfrey0/Code/sudoku_solver/CLI/cmake-build-debug/CMakeFiles/sudoku_solver.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

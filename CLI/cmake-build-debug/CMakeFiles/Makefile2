@@ -44,10 +44,10 @@ RM = /home/tgodfrey0/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/193.6494.38/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tgodfrey0/Code/sudoku_solver
+CMAKE_SOURCE_DIR = /home/tgodfrey0/Code/sudoku_solver/CLI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tgodfrey0/Code/sudoku_solver/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tgodfrey0/Code/sudoku_solver/CLI/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ preinstall:
 CMakeFiles/sudoku_solver.dir/all:
 	$(MAKE) -f CMakeFiles/sudoku_solver.dir/build.make CMakeFiles/sudoku_solver.dir/depend
 	$(MAKE) -f CMakeFiles/sudoku_solver.dir/build.make CMakeFiles/sudoku_solver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tgodfrey0/Code/sudoku_solver/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target sudoku_solver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tgodfrey0/Code/sudoku_solver/CLI/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target sudoku_solver"
 .PHONY : CMakeFiles/sudoku_solver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sudoku_solver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tgodfrey0/Code/sudoku_solver/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tgodfrey0/Code/sudoku_solver/CLI/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sudoku_solver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tgodfrey0/Code/sudoku_solver/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tgodfrey0/Code/sudoku_solver/CLI/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/sudoku_solver.dir/rule
 
 # Convenience name for target.
