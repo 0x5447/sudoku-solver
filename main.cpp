@@ -62,7 +62,7 @@ void solve(int grid[9][9]){
 }
 
 int main() {
-    int grid[9][9] = {
+    int grid[9][9]/* = {
             {5, 3, 0, 0, 7, 0, 0, 0, 0},
             {6, 0, 0, 1, 9, 5, 0, 0, 0},
             {0, 9, 8, 0, 0, 0, 0, 6, 0},
@@ -72,8 +72,20 @@ int main() {
             {0, 6, 0, 0, 0, 0, 2, 8, 0},
             {0, 0, 0, 4, 1, 9, 0, 0, 5},
             {0, 0, 0, 0, 8, 0, 0, 0, 0}
-    };
-
+    }*/;
+    for(int i = 0; i < 9; ++i){ // TODO: Fix this block to input correctly
+        char line[9];
+        std::cin >> line;
+        for(int j = 0; j < 9; ++j){
+            try{
+                grid[i][j] = (int)line[j];
+            }
+            catch(const std::exception&){
+                return -1;
+            }
+        }
+    }
+    printGrid(grid, 0);
     solve(grid);
 
     return 0;
