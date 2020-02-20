@@ -4,6 +4,9 @@
 #include "ui_solvedsudoku.h"
 #include "solvedsudoku.h"
 
+#include "ui_maxnumber.h"
+#include "maxnumber.h"
+
 #include <iostream>
 #include <string>
 #include <QString>
@@ -51,7 +54,7 @@ bool possible(int y, int x, int n, int grid[9][9]){
     return true;
 }
 
-void solve(int grid[9][9]){
+bool solve(int grid[9][9]){
     for(int y = 0; y < 9; ++y){
         for(int x = 0; x < 9; ++x){
             if(grid[y][x] == 0){
@@ -62,12 +65,23 @@ void solve(int grid[9][9]){
                         grid[y][x] = 0;
                     }
                 }
-                return;
+                return false;
             }
         }
     }
     ++numSolved;
-    printGrid(grid, numSolved);
+    if(numSolved >= 10){
+        maxNumber errDialogue;
+        errDialogue.setWindowTitle("LIMIT REACHED");
+        errDialogue.exec();
+        QApplication::closeAllWindows();
+        errDialogue.~maxNumber();
+        return false;
+    }
+    else{
+        printGrid(grid, numSolved);
+        return true;
+    }
 }
 
 
@@ -178,5 +192,9 @@ void SudokuSolver::on_solveButton_clicked()
     grid[8][7] = ui->spinBox98->value();
     grid[8][8] = ui->spinBox99->value();
 
-    solve(grid);
+    bool solveStatus = solve(grid);
+    if(!solveStatus){
+        ui->~SudokuSolver();
+
+    }
 }

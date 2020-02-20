@@ -17,14 +17,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    maxnumber.cpp \
     solvedsudoku.cpp \
     sudokusolver.cpp
 
 HEADERS += \
+    maxnumber.h \
     solvedsudoku.h \
     sudokusolver.h
 
 FORMS += \
+    maxnumber.ui \
     solvedsudoku.ui \
     sudokusolver.ui
 
